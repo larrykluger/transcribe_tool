@@ -1,0 +1,52 @@
+<% include ../partials/head %>
+
+<% if (! locals.transcription) { %>
+  <!-- No transcription file loaded -->
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome!</h1>
+    <p class="lead">Welcome to the AWS Transcribe Tool.</p>
+    <p class="lead">This tool manages the output of AWS Transcribe jobs.</p>
+    <hr class="my-4">
+    <p>Since the output files are large, it will take some time to upload them.</p>
+    <p class="lead">
+      <form>
+        <label>Read a Transcription File or use Drag and Drop: </label>
+        <input type="file" id="tfile" name="tfile" />
+      </form>
+
+<!--      <a class="btn btn-primary btn-lg" href="/upload_transcription"
+         role="button"
+         data-busy="href">Upload a Transcription File</a> -->
+    </p>
+  </div>
+<% } %>
+
+<div>
+<p class="audio">
+  <p id="audio-label"></p>
+  <audio id="player" class="mejs__player">
+</p>
+</div>
+
+
+<div style="margin-top:2em;">
+  <p class="lead">
+    Transcription file
+  </p>
+
+  <table>
+    <thead>
+      <tr><th>Speaker</th><th>Transcription</th></tr>
+    </thead>
+    <tbody id="tableBody">
+      <tr><td>Speaker</td><td>Transcription</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+<% include ../partials/foot %>

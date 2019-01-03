@@ -1,0 +1,41 @@
+{
+  "name": "transcribe_tool",
+  "version": "1.0.0",
+  "description": "Manage AWS Transcribe output files",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node  --inspect-brk index.js",
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larrykluger/transcribe_tool"
+  },
+  "author": "Larry Kluger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larrykluger/transcribe_tool/issues"
+  },
+  "homepage": "https://github.com/larrykluger/transcribe_tool#readme",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.6",
+    "fs": "0.0.1-security",
+    "helmet": "^3.15.0",
+    "helmet-csp": "^2.7.1",
+    "lodash": "^4.17.11",
+    "memorystore": "^1.6.0",
+    "moment": "^2.23.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
