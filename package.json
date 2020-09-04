@@ -31,7 +31,7 @@
     "express-session": "^1.16.2",
     "fs": "0.0.1-security",
     "helmet": "^3.20.1",
-    "helmet-csp": "^2.9.0",
+    "helmet-csp": "^2.9.1",
     "lodash": "^4.17.19",
     "memorystore": "^1.6.1",
     "moment": "^2.24.0",
